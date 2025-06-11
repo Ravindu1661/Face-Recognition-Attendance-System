@@ -1,0 +1,345 @@
+/* Main Styles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f8f9fc;
+}
+
+.bg-gradient-primary {
+    background: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    min-height: 100vh;
+}
+
+.card {
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    border: none;
+}
+
+.form-control-user {
+    border-radius: 10rem;
+    padding: 1.5rem 1rem;
+}
+
+.btn-user {
+    border-radius: 10rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+/* Face Recognition Styles */
+#video {
+    border: 3px solid #4e73df;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.camera-container {
+    position: relative;
+    display: inline-block;
+}
+
+.face-overlay {
+    position: absolute;
+    border: 2px solid #28a745;
+    border-radius: 4px;
+    background: rgba(40, 167, 69, 0.1);
+}
+
+/* Dashboard Styles */
+.dashboard-card {
+    transition: transform 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.attendance-status {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.status-present {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.status-late {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.status-absent {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Loading Animation */
+.loading-spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #4e73df;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #video {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .btn-group-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .btn-group-mobile .btn {
+        width: 100%;
+    }
+}
+
+/* Alert Styles */
+.alert-custom {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.table-custom {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-custom th {
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+}
+
+.table-custom td {
+    border-color: #e3e6f0;
+    vertical-align: middle;
+}
+
+/* Navigation Styles */
+.navbar-custom {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover {
+    color: #4e73df !important;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #dee2e6 !important;
+        box-shadow: none !important;
+    }
+    
+    .table {
+        font-size: 12px;
+    }
+    
+    .badge {
+        border: 1px solid #000;
+        color: #000 !important;
+        background-color: transparent !important;
+    }
+    
+    canvas {
+        display: none !important;
+    }
+}
+
+/* Report specific styles */
+.stat-card {
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+}
+
+.border-right {
+    border-right: 1px solid #e3e6f0;
+}
+
+
+/* Chart containers - Updated */
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Pie chart specific styles */
+.pie-chart-container {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fix for canvas elements */
+canvas {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Specific fixes for pie chart */
+#pieChart {
+    max-height: 200px !important;
+    width: auto !important;
+}
+
+/* Monthly chart fixes */
+#monthlyChart {
+    max-height: 300px !important;
+}
+
+/* Card body for charts */
+.card-body canvas {
+    margin: 0 auto;
+    display: block;
+}
+
+/* Responsive chart fixes */
+@media (max-width: 768px) {
+    .chart-container {
+        height: 250px;
+    }
+    
+    .pie-chart-container {
+        height: 200px;
+    }
+    
+    #pieChart {
+        max-height: 150px !important;
+    }
+    
+    #monthlyChart {
+        max-height: 200px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .chart-container {
+        height: 200px;
+    }
+    
+    .pie-chart-container {
+        height: 180px;
+    }
+    
+    #pieChart {
+        max-height: 120px !important;
+    }
+}
+
+/* Fix scrolling issues */
+.card-body {
+    overflow: visible;
+}
+
+/* Chart wrapper to prevent overflow */
+.chart-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Status badges */
+.badge {
+    font-size: 0.75em;
+}
+
+/* Modal improvements */
+.modal-lg {
+    max-width: 900px;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+    
+    .btn-group-sm > .btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Loading states */
+.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.spinner-border-sm {
+    width: 1rem;
+    height: 1rem;
+}
+
+/* Custom scrollbar for tables */
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
