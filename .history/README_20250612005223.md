@@ -1,0 +1,461 @@
+# Face Recognition Attendance System - User Manual
+
+## Table of Contents
+1. [System Overview](#system-overview)
+2. [Getting Started](#getting-started)
+3. [User Roles & Permissions](#user-roles--permissions)
+4. [Login Process](#login-process)
+5. [User Dashboard](#user-dashboard)
+6. [Marking Attendance](#marking-attendance)
+7. [Viewing Reports](#viewing-reports)
+8. [Admin Panel](#admin-panel)
+9. [Troubleshooting](#troubleshooting)
+10. [FAQ](#faq)
+
+---
+
+## System Overview
+
+### What is Face Recognition Attendance System?
+A modern web-based attendance management system that uses facial recognition technology to track employee attendance. The system eliminates the need for manual attendance marking and provides real-time reporting capabilities.
+
+### Key Features
+- ✅ **Face Recognition Technology** - Secure attendance marking using facial recognition
+- ✅ **Real-time Tracking** - Instant attendance recording and updates
+- ✅ **Comprehensive Reports** - Detailed attendance analytics and reports
+- ✅ **Multi-user Support** - Separate interfaces for employees and administrators
+- ✅ **Export Capabilities** - Download reports in CSV format
+- ✅ **Mobile Responsive** - Works on desktop, tablet, and mobile devices
+- ✅ **Secure Authentication** - Password-protected user accounts
+
+### System Requirements
+- **Browser**: Chrome, Firefox, Safari, Edge (latest versions)
+- **Camera**: Webcam or built-in camera
+- **Internet**: Stable internet connection
+- **JavaScript**: Must be enabled in browser
+
+---
+
+## Getting Started
+
+### First Time Setup
+1. **Receive Login Credentials** from your system administrator
+2. **Open your web browser** and navigate to the system URL
+3. **Enable camera permissions** when prompted
+4. **Test your camera** to ensure it's working properly
+
+### System URL
+```
+http://your-domain.com/attendance-system/
+```
+
+---
+
+## User Roles & Permissions
+
+### 👤 Employee (User Role)
+**What you can do:**
+- Mark your own attendance using face recognition
+- View your attendance history and reports
+- Check in and check out
+- Export your attendance data
+- Update your profile information
+
+**What you cannot do:**
+- View other employees' attendance
+- Access administrative functions
+- Modify system settings
+- Manage user accounts
+
+### 👨‍💼 Administrator (Admin Role)
+**What you can do:**
+- All employee functions
+- View all employees' attendance data
+- Manage user accounts (add, edit, delete)
+- Generate system-wide reports
+- Configure system settings
+- Edit attendance records
+- Export all system data
+
+---
+
+## Login Process
+
+### Step 1: Access the System
+1. Open your web browser
+2. Navigate to the system URL
+3. You'll see the login page
+
+### Step 2: Enter Credentials
+1. **Email Address**: Enter your company email
+2. **Password**: Enter your assigned password
+3. Click **"Login"** button
+
+### Step 3: First Login
+- You may be prompted to change your password
+- Allow camera access when requested
+- Complete your profile information if required
+
+### Sample Login Credentials
+```
+Employee Login:
+Email: john@company.com
+Password: user123
+
+Admin Login:
+Email: admin@company.com
+Password: admin123
+```
+
+---
+
+## User Dashboard
+
+### Dashboard Overview
+After logging in, you'll see your personal dashboard with:
+
+#### 📊 Today's Status Card
+- Shows if you've marked attendance today
+- Displays "Present" or "Not Marked"
+- Color-coded for quick identification
+
+#### ⏰ Check-in Time Card
+- Shows your check-in time for today
+- Displays "--:--" if not checked in yet
+- Updates automatically after attendance marking
+
+#### 🎯 Quick Actions Card
+- **Mark Attendance** button (if not marked today)
+- **Check Out** button (if checked in but not out)
+- **Attendance Marked** confirmation (if completed)
+
+#### 📈 Recent Attendance Table
+- Shows your last 5 attendance records
+- Includes date, check-in, check-out, and status
+- Color-coded status badges
+
+### Navigation Menu
+- **Dashboard** - Main overview page
+- **Mark Attendance** - Face recognition page
+- **Quick Reports** - Summary statistics
+- **Detailed Reports** - Comprehensive attendance data
+- **Admin Panel** - (Admin only)
+- **Logout** - Sign out of system
+
+---
+
+## Marking Attendance
+
+### Step-by-Step Process
+
+#### Step 1: Access Attendance Page
+1. Click **"Mark Attendance"** from dashboard
+2. Or click the camera icon in navigation
+
+#### Step 2: Camera Setup
+1. Click **"Start Camera"** button
+2. Allow camera access when prompted
+3. Position yourself in front of camera
+4. Ensure good lighting and clear face visibility
+
+#### Step 3: Face Recognition
+1. Wait for face recognition models to load
+2. Look directly at the camera
+3. Keep your face steady and well-lit
+4. The system will detect and analyze your face
+
+#### Step 4: Capture Attendance
+1. Click **"Capture & Mark Attendance"** button
+2. System will process your face data
+3. Wait for confirmation message
+4. Attendance will be recorded automatically
+
+### Camera Guidelines
+- **Lighting**: Ensure adequate lighting on your face
+- **Position**: Face the camera directly
+- **Distance**: Stay 2-3 feet from camera
+- **Stability**: Keep your head steady during capture
+- **Background**: Use a plain background if possible
+
+### Troubleshooting Camera Issues
+- **Camera not working**: Check browser permissions
+- **Poor recognition**: Improve lighting conditions
+- **Multiple faces**: Ensure only one person in frame
+- **Blurry image**: Clean camera lens and stay still
+
+---
+
+## Viewing Reports
+
+### Quick Reports Page
+
+#### Access Quick Reports
+1. Click **"Quick Reports"** in navigation
+2. View instant statistics for different time periods
+
+#### Available Statistics
+- **Today**: Current day attendance status
+- **This Week**: Weekly attendance summary
+- **This Month**: Monthly performance metrics
+- **This Year**: Annual attendance overview
+
+#### Quick Stats Include
+- Attendance percentage
+- Total present days
+- Total working hours
+- Performance indicators
+
+### Detailed Reports Page
+
+#### Access Detailed Reports
+1. Click **"Detailed Reports"** in navigation
+2. Use filters to customize your view
+
+#### Filter Options
+- **Date Range**: Select start and end dates
+- **Month/Year**: Choose specific month and year
+- **Status Filter**: Filter by present, late, or absent
+
+#### Report Features
+- **Monthly Trend Chart**: Visual attendance patterns
+- **Distribution Chart**: Pie chart of attendance types
+- **Detailed Table**: Complete attendance records
+- **Summary Statistics**: Key performance metrics
+
+#### Export Options
+1. Click **"Export to CSV"** button
+2. File will download automatically
+3. Open in Excel or Google Sheets
+4. Includes all filtered data
+
+### Understanding Report Data
+
+#### Status Types
+- **Present** 🟢: On time attendance
+- **Late** 🟡: Arrived after designated time
+- **Absent** 🔴: No attendance marked
+
+#### Time Calculations
+- **Working Hours**: Total time between check-in and check-out
+- **Break Time**: Automatically deducted lunch breaks
+- **Overtime**: Hours worked beyond standard time
+
+---
+
+## Admin Panel
+
+### Accessing Admin Features
+*Available only for Administrator accounts*
+
+#### Admin Dashboard
+1. Click **"Admin Panel"** in navigation
+2. View system-wide statistics
+3. Monitor all employee attendance
+
+#### Key Admin Statistics
+- **Total Active Users**: Number of employees
+- **Today's Attendance**: Current day statistics
+- **Average Attendance**: System performance metrics
+- **Monthly Trends**: Organization-wide patterns
+
+### User Management
+
+#### View All Users
+1. Go to **Admin Panel** → **Manage Users**
+2. See complete user list with details
+3. Check user status and roles
+
+#### Add New User
+1. Click **"Add New User"** button
+2. Fill in required information:
+   - Employee ID
+   - Full Name
+   - Email Address
+   - Password
+   - Role (User/Admin)
+3. Click **"Add User"** to save
+
+#### Edit User Information
+1. Click **"Edit"** button next to user
+2. Modify user details
+3. Change role or status if needed
+4. Save changes
+
+#### Delete User
+1. Click **"Delete"** button next to user
+2. Confirm deletion
+3. User will be permanently removed
+
+### System Reports
+
+#### Generate All Reports
+1. Go to **Admin Panel** → **Reports**
+2. View organization-wide attendance data
+3. Export comprehensive reports
+
+#### Advanced Analytics
+- **Top Performers**: Best attendance records
+- **Monthly Comparisons**: Period-over-period analysis
+- **Department Statistics**: Group-wise performance
+- **Trend Analysis**: Long-term patterns
+
+---
+
+## Troubleshooting
+
+### Common Issues & Solutions
+
+#### Login Problems
+**Issue**: Cannot login with credentials
+**Solution**: 
+- Check email spelling and password
+- Ensure Caps Lock is off
+- Contact administrator for password reset
+
+**Issue**: "Access Denied" message
+**Solution**:
+- Verify you have correct permissions
+- Check if account is active
+- Contact administrator
+
+#### Camera Issues
+**Issue**: Camera not starting
+**Solution**:
+- Allow camera permissions in browser
+- Check if camera is being used by another application
+- Try refreshing the page
+- Use a different browser
+
+**Issue**: Face not recognized
+**Solution**:
+- Improve lighting conditions
+- Remove glasses or hat if wearing
+- Look directly at camera
+- Ensure only one face in frame
+
+#### Attendance Issues
+**Issue**: Attendance not recorded
+**Solution**:
+- Check internet connection
+- Ensure face was properly captured
+- Try marking attendance again
+- Contact administrator if problem persists
+
+**Issue**: Wrong time recorded
+**Solution**:
+- Check system time settings
+- Verify timezone configuration
+- Report to administrator
+
+#### Report Issues
+**Issue**: Reports not loading
+**Solution**:
+- Check internet connection
+- Try refreshing the page
+- Clear browser cache
+- Use a different browser
+
+**Issue**: Export not working
+**Solution**:
+- Check browser download settings
+- Disable popup blockers
+- Try a different browser
+- Contact administrator
+
+### Browser Compatibility
+**Recommended Browsers**:
+- Google Chrome (latest)
+- Mozilla Firefox (latest)
+- Safari (latest)
+- Microsoft Edge (latest)
+
+**Not Recommended**:
+- Internet Explorer
+- Very old browser versions
+
+---
+
+## FAQ
+
+### General Questions
+
+**Q: How accurate is the face recognition?**
+A: The system uses advanced face recognition technology with high accuracy rates. However, good lighting and proper positioning improve recognition success.
+
+**Q: Can I mark attendance from my mobile phone?**
+A: Yes, the system is mobile-responsive and works on smartphones with front-facing cameras.
+
+**Q: What if I forget to mark attendance?**
+A: Contact your administrator who can manually add your attendance record with proper justification.
+
+**Q: Can I mark attendance multiple times per day?**
+A: You can check in once and check out once per day. The system prevents duplicate entries.
+
+### Technical Questions
+
+**Q: What browsers are supported?**
+A: Modern browsers including Chrome, Firefox, Safari, and Edge. Internet Explorer is not supported.
+
+**Q: Do I need to install any software?**
+A: No, the system runs entirely in your web browser. No additional software installation required.
+
+**Q: Is my face data stored securely?**
+A: Yes, all biometric data is encrypted and stored securely following data protection standards.
+
+**Q: What if the system is down?**
+A: Contact your IT administrator. Alternative attendance methods may be implemented during system maintenance.
+
+### Account Questions
+
+**Q: How do I change my password?**
+A: Contact your administrator to reset your password. Self-service password reset may be available.
+
+**Q: Can I update my profile information?**
+A: Basic profile updates may be available. Contact administrator for major changes.
+
+**Q: What if I'm locked out of my account?**
+A: Contact your administrator to unlock your account and reset credentials.
+
+### Attendance Questions
+
+**Q: What constitutes being "late"?**
+A: This depends on your organization's policy. Typically, arriving after the designated start time marks you as late.
+
+**Q: Can I see other employees' attendance?**
+A: Regular users can only see their own attendance. Administrators can view all employee data.
+
+**Q: How long are attendance records kept?**
+A: Attendance records are typically kept for the duration specified by your organization's policy.
+
+**Q: Can attendance be edited after marking?**
+A: Only administrators can edit attendance records, and such changes are logged for audit purposes.
+
+---
+
+## Contact Information
+
+### Technical Support
+- **Email**: support@company.com
+- **Phone**: +1-234-567-8900
+- **Hours**: Monday-Friday, 9:00 AM - 5:00 PM
+
+### System Administrator
+- **Email**: admin@company.com
+- **Internal Extension**: 1001
+
+### Emergency Contact
+- **After Hours**: +1-234-567-8901
+- **Email**: emergency@company.com
+
+---
+
+## System Information
+
+**Version**: 1.0.0  
+**Last Updated**: December 2024  
+**Developed By**: Your Development Team  
+**Documentation Version**: 1.0  
+
+---
+
+*This manual is subject to updates. Please check for the latest version regularly.*
